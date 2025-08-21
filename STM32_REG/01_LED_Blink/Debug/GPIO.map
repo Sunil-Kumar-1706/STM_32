@@ -229,7 +229,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x16 ./Src/syscalls.o
  .debug_macro   0x00000000       0xce ./Src/syscalls.o
  .debug_line    0x00000000      0x8a7 ./Src/syscalls.o
- .debug_str     0x00000000     0x99f1 ./Src/syscalls.o
+ .debug_str     0x00000000     0x99e1 ./Src/syscalls.o
  .comment       0x00000000       0x44 ./Src/syscalls.o
  .debug_frame   0x00000000      0x2ac ./Src/syscalls.o
  .ARM.attributes
@@ -294,7 +294,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x6a ./Src/sysmem.o
  .debug_macro   0x00000000      0x1df ./Src/sysmem.o
  .debug_line    0x00000000      0x583 ./Src/sysmem.o
- .debug_str     0x00000000     0x778f ./Src/sysmem.o
+ .debug_str     0x00000000     0x777f ./Src/sysmem.o
  .comment       0x00000000       0x44 ./Src/sysmem.o
  .debug_frame   0x00000000       0x34 ./Src/sysmem.o
  .ARM.attributes
@@ -886,16 +886,16 @@ LOAD C:/ST/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_macro   0x0000151a       0xc4 ./Drivers/Src/GPIO_driver.o
  .debug_macro   0x000015de       0x8e ./Src/main.o
 
-.debug_line     0x00000000      0xcc3
- .debug_line    0x00000000      0x795 ./Drivers/Src/GPIO_driver.o
- .debug_line    0x00000795      0x4b3 ./Src/main.o
- .debug_line    0x00000c48       0x7b ./Startup/startup_stm32l476rgtx.o
+.debug_line     0x00000000      0xca1
+ .debug_line    0x00000000      0x783 ./Drivers/Src/GPIO_driver.o
+ .debug_line    0x00000783      0x4a3 ./Src/main.o
+ .debug_line    0x00000c26       0x7b ./Startup/startup_stm32l476rgtx.o
 
-.debug_str      0x00000000     0x5d95
- .debug_str     0x00000000     0x5d95 ./Drivers/Src/GPIO_driver.o
-                               0x5f28 (size before relaxing)
- .debug_str     0x00005d95     0x5d27 ./Src/main.o
- .debug_str     0x00005d95       0x7e ./Startup/startup_stm32l476rgtx.o
+.debug_str      0x00000000     0x5dc4
+ .debug_str     0x00000000     0x5dc4 ./Drivers/Src/GPIO_driver.o
+                               0x5f18 (size before relaxing)
+ .debug_str     0x00005dc4     0x5d17 ./Src/main.o
+ .debug_str     0x00005dc4       0x7e ./Startup/startup_stm32l476rgtx.o
 
 .comment        0x00000000       0x43
  .comment       0x00000000       0x43 ./Drivers/Src/GPIO_driver.o
