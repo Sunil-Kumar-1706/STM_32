@@ -62,6 +62,15 @@ typedef struct{
 #define SPI_SSM_DI							0
 #define SPI_SSM_EN							1
 
+#define SPI_READY 							0
+#define SPI_BUSY_IN_RX 						1
+#define SPI_BUSY_IN_TX 						2
+
+#define SPI_EVENT_TX_CMPLT					1
+#define SPI_EVENT_RX_CMPLT					2
+#define SPI_EVENT_OVR_ERR					3
+#define SPI_EVENT_CRC_ERR					4
+
 /*peripheral clock setup */
 void SPI_PeriClockControl(SPI_RegDef_t *pGPIOx , uint8_t EnorDi);
 
@@ -73,9 +82,21 @@ void SPI_DeInit(SPI_RegDef_t *pSPIx);
 void SPI_SendData(SPI_RegDef_t *pSPIx, uint8_t *pTxBuffer,uint32_t Len);
 void SPI_ReceiveData(SPI_RegDef_t *pSPIx,uint8_t *pRxBuffer,uint32_t Len);
 
+uint8_t SPI_SendDataIT(SPI_Handle_t *pSPIHandle, uint8_t *pTxBuffer,uint32_t Len);
+uint8_t SPI_ReceiveDataIT(SPI_Handle_t *pSPIHandle,uint8_t *pRxBuffer,uint32_t Len);
+
 /*IRQ and ISR  configuration */
 void SPI_IRQInterruptConfig(uint8_t IRQNumber,  uint8_t EnorDi);
 void SPI_PRIORITY_CONFIG(uint8_t IRQNumber,uint8_t IRQPriority);
 void SPI_IRQHandling(SPI_Handle_t *pHandle);
+
+void SPI_PeripheralControl(SPI_RegDef_t *pSPIx, uint8_t EnOrDi);
+void  SPI_SSIConfig(SPI_RegDef_t *pSPIx, uint8_t EnOrDi);
+uint8_t SPI_GetFlagStatus(SPI_RegDef_t*pSPIx, uint32_t FlagName);
+void  SPI_SSOEConfig(SPI_RegDef_t *pSPIx, uint8_t EnOrDi);
+void SPI_ClearOVRFlag(SPI_RegDef_t *pSPIx);
+void SPI_CloseReception(SPI_Handle_t *pSPIHandle);
+void SPI_CloseTransmisson(SPI_Handle_t *pSPIHandle);
+void SPI_ApplicationEventCallback(SPI_Handle_t *pSPIHandle,uint8_t AppEv);
 
 #endif /* INC_SPI_DRIVER_H_ */
