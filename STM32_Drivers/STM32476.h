@@ -362,6 +362,58 @@ typedef struct{
 #define UART5_PCLK_DI()		       (RCC -> APB1ENR1 &= ~(1<<20))
 /*end of uart clk disable*/
 
+/*uart bit macros starts*/
+#define USART_CR1_UE 					0
+#define USART_CR1_UESM 					1
+#define USART_CR1_RE  					2
+#define USART_CR1_TE 					3
+#define USART_CR1_IDLEIE 				4
+#define USART_CR1_RXNEIE  				5
+#define USART_CR1_TCIE					6
+#define USART_CR1_TXEIE					7
+#define USART_CR1_PEIE 					8
+#define USART_CR1_PS 					9
+#define USART_CR1_PCE 					10
+#define USART_CR1_WAKE  				11
+#define USART_CR1_M 					12
+#define USART_CR1_OVER8  				15
+
+#define USART_CR2_ADD   				4
+#define USART_CR2_LBDL   				5
+#define USART_CR2_LBDIE  				6
+#define USART_CR2_LBCL   				8
+#define USART_CR2_CPHA   				9
+#define USART_CR2_CPOL   				10
+#define USART_CR2_STOP   				12
+#define USART_CR2_LINEN   				14
+
+#define USART_CR3_EIE					0
+#define USART_CR3_IREN					1
+#define USART_CR3_IRLP					2
+#define USART_CR3_HDSEL					3
+#define USART_CR3_NACK					4
+#define USART_CR3_SCEN					5
+#define USART_CR3_DMAR					6
+#define USART_CR3_DMAT					7
+#define USART_CR3_RTSE					8
+#define USART_CR3_CTSE					9
+#define USART_CR3_CTSIE					10
+#define USART_CR3_ONEBIT				11
+
+#define USART_ISR_PE					0
+#define USART_ISR_FE					1
+#define USART_ISR_NF					2
+#define USART_ISR_ORE					3
+#define USART_ISR_IDLE					4
+#define USART_ISR_RXNE					5
+#define USART_ISR_TC					6
+#define USART_ISR_TXE					7
+#define USART_ISR_LBDF					8
+#define USART_ISR_CTSIF					9
+#define USART_ISR_CTS					10
+/*USART BIT macros end*/
+
+
 /* clock disable for SYSCFG  */
 #define SYSCFG_PCLK_DI()           		(RCC -> APB2ENR &=~(1<<0))
 /* end of SYSCFG clk disable*/
