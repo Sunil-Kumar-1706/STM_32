@@ -12,7 +12,7 @@
 I2C_Handle_t I2C1Handle;       // I2C handle structure
 USART_Handle_t usart2_handle;  // USART handle structure
 
-uint8_t some_data[] = "hello from STM";   // Data to send via I2C
+uint8_t some_data[] = "Hello from STM";   // Data to send via I2C
 
 // ------------------- USART2 GPIO Initialization -------------------
 void USART2_GPIOInits(void)

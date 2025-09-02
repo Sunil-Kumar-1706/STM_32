@@ -5,7 +5,6 @@
 #include"stdlib.h"
 #include"string.h"
 
-
 // Configuration structure for I2C peripheral
 typedef struct{
     uint8_t I2C_DeviceAddress;  // Own device address (if acting as slave)
@@ -142,5 +141,6 @@ void I2C_GenerateStopCondition(I2C_RegDef_t *pI2Cx);
 
 // Application callback for I2C events (e.g., Tx complete, Rx complete, errors)
 void I2C_ApplicationEventCallback(I2C_Handle_t *pI2CHandle,uint8_t AppEv);
+
 
 #endif /* INC_I2C_DRIVER_H_ */
