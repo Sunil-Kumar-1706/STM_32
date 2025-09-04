@@ -1,0 +1,4 @@
+../Drivers/Src/ADC.c:22:6:delay1	16	static
+../Drivers/Src/ADC.c:28:6:adc_init	8	static
+../Drivers/Src/ADC.c:68:6:start_conversion	4	static
+../Drivers/Src/ADC.c:77:10:adc_read	4	static
