@@ -1,0 +1,2 @@
+../Drivers/Src/Timer_driver.c:8:6:timer2_1hz_init	1
+../Drivers/Src/Timer_driver.c:18:6:timer2_pa5_output_compare	1
