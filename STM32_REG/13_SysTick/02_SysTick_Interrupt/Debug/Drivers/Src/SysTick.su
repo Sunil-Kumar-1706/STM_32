@@ -1,0 +1,2 @@
+../Drivers/Src/SysTick.c:8:6:systickDelayMs	24	static
+../Drivers/Src/SysTick.c:30:6:systick_1hz_Interrupt	4	static
