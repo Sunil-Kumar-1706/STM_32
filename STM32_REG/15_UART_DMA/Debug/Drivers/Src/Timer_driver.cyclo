@@ -1,0 +1,2 @@
+../Drivers/Src/Timer_driver.c:10:6:timer2_1hz_init	1
+../Drivers/Src/Timer_driver.c:19:6:timer2_1hz_interrupt_init	1
