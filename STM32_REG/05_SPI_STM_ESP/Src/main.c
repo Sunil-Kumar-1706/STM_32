@@ -57,7 +57,7 @@ void SPI2_Inits(void)
 
 int main(void)
 {
-    uint8_t data = 10;  // Data to be sent
+    uint8_t data = 1;  // Data to be sent
 
     SPI2_GPIOInits();                // Configure SPI2 pins
     SPI2_Inits();                    // Configure SPI2 peripheral
